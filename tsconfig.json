@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "esnext",
+    "jsx": "react",
+    "declaration": true,
+    "outDir": "lib",
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "moduleResolution": "node",
+    "skipLibCheck": true,
+    "baseUrl": "."
+  },
+  "include": ["src", "node_modules/next/types/global.d.ts", "global.d.ts"],
+  "exclude": ["node_modules", "lib", "**/*.spec.ts", "example"]
+}

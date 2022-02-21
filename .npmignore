@@ -1,0 +1,12 @@
+# sources
+preview
+src
+
+# locks
+package-lock.json
+yarn-lock.json
+
+# configs
+tslint.json
+tsconfig.json
+.prettierrc

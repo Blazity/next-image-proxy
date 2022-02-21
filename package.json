@@ -1,0 +1,55 @@
+{
+  "name": "nextjs-color-mode",
+  "version": "1.0.5",
+  "description": "A helper for creating non-flickering and accessible themed applications",
+  "author": "Bart Stefanski <contact@bstefanski.com> (https://bstefanski.com/)",
+  "license": "MIT",
+  "source": "src/index.ts",
+  "main": "./lib/next-image-proxy.cjs",
+  "module": "./lib/next-image-proxy.module.js",
+  "unpkg": "./lib/next-image-proxy.umd.js",
+  "types": "./lib/index.d.ts",
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "prepublishOnly": "npm run build",
+    "prebuild": "rimraf lib",
+    "build": "microbundle",
+    "build:watch": "microbundle watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bmstefanski/next-image-proxy.git"
+  },
+  "keywords": [
+    "nextjs",
+    "nextjs-plugin"
+  ],
+  "bugs": {
+    "url": "https://github.com/bmstefanski/next-image-proxy/issues"
+  },
+  "homepage": "https://github.com/bmstefanski/next-image-proxy#readme",
+  "peerDependencies": {
+    "next": ">=9.0.0",
+    "react": ">=16.0.0",
+    "react-dom": ">=16.0.0"
+  },
+  "devDependencies": {
+    "@types/lodash.merge": "^4.6.6",
+    "@types/next": "^9.0.0",
+    "@types/node": "^16.4.13",
+    "@types/react": "^17.0.18",
+    "@types/user-agents": "^1.0.2",
+    "microbundle": "^0.13.3",
+    "prettier": "^2.3.2",
+    "react": ">=16.0.0",
+    "react-dom": ">=16.0.0",
+    "typescript": "^4.3.5"
+  },
+  "dependencies": {
+    "isomorphic-unfetch": "^3.1.0",
+    "lodash.merge": "^4.6.2",
+    "user-agents": "^1.0.934"
+  }
+}
