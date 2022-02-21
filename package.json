@@ -1,7 +1,7 @@
 {
-  "name": "nextjs-color-mode",
-  "version": "1.0.5",
-  "description": "A helper for creating non-flickering and accessible themed applications",
+  "name": "next-image-proxy",
+  "version": "1.0.0",
+  "description": "Next.js image proxy. Makes it possible to use dynamic domains in next/image component.",
   "author": "Bart Stefanski <contact@bstefanski.com> (https://bstefanski.com/)",
   "license": "MIT",
   "source": "src/index.ts",
