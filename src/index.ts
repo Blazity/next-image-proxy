@@ -26,7 +26,7 @@ export function withImageProxy(passedOptions?: DeepPartial<Options>) {
       return
     }
 
-    const isAllowed = isUrlWhitelisted(imageUrl)
+    const isAllowed = isUrlWhitelisted(imageUrl, options.whitelistedPatterns)
 
     if (!isAllowed) {
       res.status(422).send({ message: options.messages.notWhitelisted })
@@ -36,43 +36,43 @@ export function withImageProxy(passedOptions?: DeepPartial<Options>) {
     const imageBlob = await fetchImageBlob(imageUrl)
 
     if (!imageBlob) {
-      handleFallback()
+      handleFallback(res, options)
       return
     }
 
-    pipeImage(imageBlob)
-
-    function pipeImage(imageBlob: ReadableStream<Uint8Array>) {
-      const passThrough = new Stream.PassThrough()
-
-      stream.pipeline(imageBlob as unknown as NodeJS.ReadableStream, passThrough, (err) => {
-        if (err) {
-          console.log(err)
-          handleFallback()
-          return
-        }
-      })
-      passThrough.pipe(res)
-    }
-
-    function handleFallback() {
-      if (options.fallbackUrl.trim()) {
-        res.redirect(options.fallbackUrl)
-      } else {
-        res.status(422).send({ message: options.messages.imageFetchError })
-      }
-    }
-
-    async function fetchImageBlob(url: string) {
-      return await fetch(url, {
-        headers: { 'user-agent': new UserAgent().toString() },
-      }).then((data) => data.body)
-    }
-
-    function isUrlWhitelisted(url: string) {
-      return options.whitelistedPatterns.some((singleHost) => {
-        return url.match(singleHost)
-      })
-    }
+    pipeImage(res, imageBlob, options)
   }
+}
+
+function pipeImage(res: NextApiResponse, imageBlob: ReadableStream<Uint8Array>, options: Options) {
+  const passThrough = new Stream.PassThrough()
+
+  stream.pipeline(imageBlob as unknown as NodeJS.ReadableStream, passThrough, (err) => {
+    if (err) {
+      console.log(err)
+      handleFallback(res, options)
+      return
+    }
+  })
+  passThrough.pipe(res)
+}
+
+function handleFallback(res: NextApiResponse, options: Options) {
+  if (options.fallbackUrl.trim()) {
+    res.redirect(options.fallbackUrl)
+  } else {
+    res.status(422).send({ message: options.messages.imageFetchError })
+  }
+}
+
+async function fetchImageBlob(url: string) {
+  return await fetch(url, {
+    headers: { 'user-agent': new UserAgent().toString() },
+  }).then((data) => data.body)
+}
+
+function isUrlWhitelisted(url: string, whitelistedPatterns: Options['whitelistedPatterns']) {
+  return whitelistedPatterns.some((singleHost) => {
+    return url.match(singleHost)
+  })
 }

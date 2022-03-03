@@ -5,8 +5,8 @@
 </div>
 
 <div align="center">
-  <a href="https://www.npmjs.com/package/next-image-proxy"><img alt="npm version badge" src="https://img.shields.io/npm/v/next-image-proxy"></a>
-  <img alt="license badge" src="https://img.shields.io/npm/l/next-image-proxy">
+  <a href="https://www.npmjs.com/package/@blazity/next-image-proxy"><img alt="npm version badge" src="https://img.shields.io/npm/v/@blazity/next-image-proxy"></a>
+  <img alt="license badge" src="https://img.shields.io/npm/l/@blazity/next-image-proxy">
 </div>
 
 <br />
@@ -25,11 +25,11 @@ You have to remember that there're some cons:
 ## 🧰 Installation
 
 ```
-$ npm i --save next-image-proxy
+$ npm i --save @blazity/next-image-proxy
 
 # or
 
-$ yarn add next-image-proxy
+$ yarn add @blazity/next-image-proxy
 ```
 
 ## 💻 Use
@@ -39,9 +39,9 @@ It is really simple to setup, you just need to add a new API route that exports 
 ```tsx
 // pages/api/imageProxy.ts
 
-import { withImageProxy } from 'next-image-proxy'
+import { withImageProxy } from '@blazity/next-image-proxy'
 
-export default withImageProxy({ whitelistedPatterns: [/medium.com/] })
+export default withImageProxy({ whitelistedPatterns: [/^https?:\/\/(.*).medium.com/] })
 ```
 
 and now you prefix the image you want to use:
@@ -49,10 +49,11 @@ and now you prefix the image you want to use:
 ```tsx
 import NextImage from 'next/image'
 
-{
-  /* O.F.C. */
+export function SomeComponent() {
+  const actualImageUrl = 'https://cdn-images-1.medium.com/max/1024/1*xYoAR2XRmoCmC9SONuTb-Q.png'
+
+  return <NextImage src={`/api/imageProxy?imageUrl=${actualImageUrl}`} width={700} height={300} />
 }
-return <NextImage src={`api/imageProxy?imageUrl=${originalUrl}`} />
 ```
 
 ## 🤲🏻 Contributing
