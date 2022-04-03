@@ -22,6 +22,10 @@ You have to remember that there're some cons:
 - You can create a security loophole if your regex isn't strict enough
 - Since it is a proxy, it will increase bandwidth costs. But the increase will be marginal unless you're working on big scale project (i.e. mils of requests per month)
 
+Limitations:
+- Might not work on Netlify
+- Might not work with serverless-next.js
+
 ## 🧰 Installation
 
 ```
