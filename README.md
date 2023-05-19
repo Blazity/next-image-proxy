@@ -1,6 +1,8 @@
+> :warning: **Next has this support built-in**: [If you're using Next.js 12.3 or higher, you don't have to use this library](https://nextjs.org/blog/next-12-3#remote-patterns-stable)
+
 <div align="center">
   <h1>Next.js Image Proxy</h1>
-  <p>Image proxy for Next.js. Makes it possible to use dynamic domains in next/image component.</p>
+  <p>Image proxy for Next.js. Makes it possible to use dynamic domains in next/image component.</p> 
   <br />
 </div>
 
