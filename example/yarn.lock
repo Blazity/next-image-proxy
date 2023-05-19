@@ -17,10 +17,10 @@
   dependencies:
     regenerator-runtime "^0.13.4"
 
-"@blazity/next-image-proxy@1.0.1":
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/@blazity/next-image-proxy/-/next-image-proxy-1.0.1.tgz#f3af5b0203ec6bdc7ff0bcba0b02c7346faa5f07"
-  integrity sha512-nBz4MQ2uB7/fRQ83i5Uc97B8XPwf04NroeHLeHXd57WnOQTylxQ+b7sKrTSSOFCXZ0ub+ABeqzvN5D7nNUB6bw==
+"@blazity/next-image-proxy@1.0.2":
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/@blazity/next-image-proxy/-/next-image-proxy-1.0.2.tgz#1ea8514981465cecedbb93e9b1788eb25538df2d"
+  integrity sha512-GCMYWYx3NCE+uVZTPISPqeg9BISK/0ilu07N85a7ZBs8BTBdozsfIUkS/9Dsl4AAT3pPKAJa0n8zMLJBN9Si5w==
   dependencies:
     isomorphic-unfetch "^3.1.0"
     lodash.merge "^4.6.2"
