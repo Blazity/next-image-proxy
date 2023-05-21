@@ -48,7 +48,7 @@
     "typescript": "^5.0.0"
   },
   "dependencies": {
-    "isomorphic-unfetch": "^3.1.0",
+    "isomorphic-unfetch": "^4.0.0",
     "lodash.merge": "^4.6.2",
     "user-agents": "^1.0.934"
   }
