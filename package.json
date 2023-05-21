@@ -38,7 +38,7 @@
   "devDependencies": {
     "@types/lodash.merge": "^4.6.6",
     "@types/next": "^9.0.0",
-    "@types/node": "^16.4.13",
+    "@types/node": "^18.0.0",
     "@types/react": "^17.0.18",
     "@types/user-agents": "^1.0.2",
     "microbundle": "^0.15.0",
