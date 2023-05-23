@@ -3632,9 +3632,9 @@ use-subscription@1.5.1:
     object-assign "^4.1.1"
 
 user-agents@^1.0.934:
-  version "1.0.1386"
-  resolved "https://registry.yarnpkg.com/user-agents/-/user-agents-1.0.1386.tgz#7db3e6156092a31c6b840e2197f802140e8a91e5"
-  integrity sha512-/UYh2wSombNU9G0Tsg4eGAqyW6+UZs/ho5L7RnI7u9sqg/qBezS6fbhRC0YmlY26jutKeeAnNfwX981k+WxQXg==
+  version "1.0.1388"
+  resolved "https://registry.yarnpkg.com/user-agents/-/user-agents-1.0.1388.tgz#59193d3df29aa78cfe66e77d3124392d40ee2730"
+  integrity sha512-K1+T73geXgTfLyVBqcqznFlTBtbCLoH+yknhpZELqE/jH+klOQTXwglwMdR75aoUgv83LsDGhdu/q70g95obHA==
   dependencies:
     dot-json "^1.3.0"
     lodash.clonedeep "^4.5.0"
