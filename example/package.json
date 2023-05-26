@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "@blazity/next-image-proxy": "1.0.2",
-    "next": "12.3.4",
+    "next": "13.4.4",
     "react": "17.0.2",
     "react-dom": "17.0.2"
   },
@@ -18,7 +18,7 @@
     "@types/node": "^18.0.0",
     "@types/react": "^17.0.39",
     "eslint": "8.41.0",
-    "eslint-config-next": "12.3.4",
+    "eslint-config-next": "13.4.4",
     "typescript": "^5.0.0"
   }
 }
