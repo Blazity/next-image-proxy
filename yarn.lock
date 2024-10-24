@@ -1214,9 +1214,9 @@
   integrity sha512-5cJ8CB4yAx7BH1oMvdU0Jh9lrEXyPkar6F9G/ERswkCuvP4KQZfZkSjcMbAICCpQTN4OuZn8tz0HiKv9TGZgrQ==
 
 "@types/user-agents@^1.0.2":
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/@types/user-agents/-/user-agents-1.0.2.tgz#3499d4aaf01a004ae9cab4e52b8d8c8b32637733"
-  integrity sha512-WOoL2UJTI6RxV8RB2kS3ZhxjjijI5G1i7mgU7mtlm4LsC1XGCfiV56h+GV4VZnAUkkkLQ4gbFGR/dggT01n0RA==
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/@types/user-agents/-/user-agents-1.0.4.tgz#49bf6760d9ca3858d91e6258835bf2c329b87cf0"
+  integrity sha512-AjeFc4oX5WPPflgKfRWWJfkEk7Wu82fnj1rROPsiqFt6yElpdGFg8Srtm/4PU4rA9UiDUZlruGPgcwTMQlwq4w==
 
 acorn@^8.5.0:
   version "8.7.0"
@@ -1678,16 +1678,6 @@ define-properties@^1.1.4, define-properties@^1.2.0:
     has-property-descriptors "^1.0.0"
     object-keys "^1.1.1"
 
-detect-indent@~6.0.0:
-  version "6.0.0"
-  resolved "https://registry.yarnpkg.com/detect-indent/-/detect-indent-6.0.0.tgz#0abd0f549f69fc6659a254fe96786186b6f528fd"
-  integrity sha512-oSyFlqaTHCItVRGK5RmrmjB+CmaMOW7IaNA/kdxqhoa6d17j/5ce9O9eWXmV/KEdRwqpQA+Vqe8a8Bsybu4YnA==
-
-docopt@~0.6.2:
-  version "0.6.2"
-  resolved "https://registry.yarnpkg.com/docopt/-/docopt-0.6.2.tgz#b28e9e2220da5ec49f7ea5bb24a47787405eeb11"
-  integrity sha512-NqTbaYeE4gA/wU1hdKFdU+AFahpDOpgGLzHP42k6H6DKExJd0A55KEVWYhL9FEmHmgeLvEU2vuKXDuU+4yToOw==
-
 dom-serializer@^1.0.1:
   version "1.3.2"
   resolved "https://registry.yarnpkg.com/dom-serializer/-/dom-serializer-1.3.2.tgz#6206437d32ceefaec7161803230c7a20bc1b4d91"
@@ -1717,15 +1707,6 @@ domutils@^2.8.0:
     dom-serializer "^1.0.1"
     domelementtype "^2.2.0"
     domhandler "^4.2.0"
-
-dot-json@^1.3.0:
-  version "1.3.0"
-  resolved "https://registry.yarnpkg.com/dot-json/-/dot-json-1.3.0.tgz#d9e498558c44bb41b22ceffe070a28b2d836314a"
-  integrity sha512-Pu11Prog/Yjf2lBICow82/DSV46n3a2XT1Rqt/CeuhkO1fuacF7xydYhI0SwQx2Ue0jCyLtQzgKPFEO6ewv+bQ==
-  dependencies:
-    detect-indent "~6.0.0"
-    docopt "~0.6.2"
-    underscore-keypath "~0.0.22"
 
 duplexer@0.1.1:
   version "0.1.1"
@@ -3579,18 +3560,6 @@ unbox-primitive@^1.0.2:
     has-symbols "^1.0.3"
     which-boxed-primitive "^1.0.2"
 
-underscore-keypath@~0.0.22:
-  version "0.0.22"
-  resolved "https://registry.yarnpkg.com/underscore-keypath/-/underscore-keypath-0.0.22.tgz#48a528392bb6efc424be1caa56da4b5faccf264d"
-  integrity sha512-fU7aYj1J2LQd+jqdQ67AlCOZKK3Pl+VErS8fGYcgZG75XB9/bY+RLM+F2xEcKHhHNtLvqqFyXAoZQlLYfec3Xg==
-  dependencies:
-    underscore "*"
-
-underscore@*:
-  version "1.13.6"
-  resolved "https://registry.yarnpkg.com/underscore/-/underscore-1.13.6.tgz#04786a1f589dc6c09f761fc5f45b89e935136441"
-  integrity sha512-+A5Sja4HP1M08MaXya7p5LvjuM7K6q/2EaC0+iovj/wOcMsTzMvDFbasi/oSapiwOlt252IqsKqPjCl7huKS0A==
-
 unfetch@^5.0.0:
   version "5.0.0"
   resolved "https://registry.yarnpkg.com/unfetch/-/unfetch-5.0.0.tgz#8a5b6e5779ebe4dde0049f7d7a81d4a1af99d142"
@@ -3632,11 +3601,10 @@ use-subscription@1.5.1:
     object-assign "^4.1.1"
 
 user-agents@^1.0.934:
-  version "1.0.1444"
-  resolved "https://registry.yarnpkg.com/user-agents/-/user-agents-1.0.1444.tgz#437689b10e4f5cc14d91c79150f41de6154048f8"
-  integrity sha512-6WXJ0RZuUKgif1rW5FN02HnpoJ8EzH6COQoXCiVStZEVPz+YnAx3iA48etY3ZD4UwueYN9ALC7j4ayHvYEh7tA==
+  version "1.1.337"
+  resolved "https://registry.yarnpkg.com/user-agents/-/user-agents-1.1.337.tgz#a828a249b00f637ea28a55eb30e716ac49915b9b"
+  integrity sha512-6Q9RllfoENfYu7RZP5qf2tmH1qPhiDTb7P3Rt9IPD5tXCz5t+7QWlRs1tooMDTaeZQQqygSjTMa0qBWOgn79yA==
   dependencies:
-    dot-json "^1.3.0"
     lodash.clonedeep "^4.5.0"
 
 util-deprecate@^1.0.2:
